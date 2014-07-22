@@ -7,7 +7,7 @@ paths = require('./paths')
 sourcemaps = require('gulp-sourcemaps')
 module.exports = (gulp) ->
   gulp.task('scripts', ->
-    gulp.src(paths.scripts.src, {read: false})
+    return gulp.src(paths.scripts.src, {read: false})
     .pipe(browserify({
       debug: !yargs.prod
       transform: [
@@ -22,6 +22,7 @@ module.exports = (gulp) ->
     .pipe(rename({suffix:'.pkg.min.js'}))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(paths.scripts.dest))
+
   )
 
   return gulp

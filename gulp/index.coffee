@@ -8,22 +8,31 @@ require('./scripts')(gulp)
 require('./watch')(gulp)
 
 gulp.task('clean', (cb) ->
-  del(paths.build, cb)
+  del([
+    paths.build
+    paths.docs.assets
+    './docs/_gh_pages'
+  ], cb)
 )
-
+gulp.task('compile', (cb)->
+  gulp.run(['scripts','css'])
+  cb()
+)
 gulp.task('default', [
   'clean'
-  'css'
-  'scripts'
-  'docs-build'
+  'compile'
 ])
 
-gulp.task('copy', ->
+gulp.task('copy', (cb)->
   gulp.src("#{paths.build}/**/*")
   .pipe(gulp.dest(paths.docs.assets))
 )
 
-gulp.task('deploy', ['default', 'copy'], ->
+gulp.task('deploy', [
+  'default'
+  'copy'
+  'docs-build'
+  ], ->
   gulp.src(paths.docs.src)
   .pipe(ghPages())
 )

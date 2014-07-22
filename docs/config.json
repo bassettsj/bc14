@@ -6,9 +6,8 @@
     "owner": "Steven",
     "description": "Ramblings of an immor(t)al demigod"
   },
-  "plugins": [
-    "wintersmith-swig"
-  ],
+  "plugins": [],
+  "baseurl": "/",
   "require": {
     "moment": "moment",
     "_": "underscore",
@@ -21,5 +20,7 @@
   },
   "output": "./docs/_gh_pages",
   "contents": "./docs/contents",
-  "templates": "./docs/templates"
+  "templates": "./docs/templates",
+  "ignore": ".DS_store",
+  "port": 8080
 }
