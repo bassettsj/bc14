@@ -1,6 +1,7 @@
 gulp = require('gulp')
 ghPages = require('gulp-gh-pages')
 paths = require('./paths')
+del = require('del')
 require('./css')(gulp)
 require('./docs')(gulp)
 require('./scripts')(gulp)
@@ -11,6 +12,7 @@ gulp.task('clean', (cb) ->
 )
 
 gulp.task('default', [
+  'clean'
   'css'
   'scripts'
   'docs-build'

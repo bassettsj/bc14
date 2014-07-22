@@ -1,3 +1,14 @@
-* {
-  color: red;
-}
+// Global varibales extends, and mixins.
+@import "library/variables";
+@import "library/mixins";
+@import "library/extends";
+
+// Base styles throughout the theme.
+@import "base/normalize";
+@import "base/type";
+
+// Layout styles.
+@import "layout/page";
+
+// Componets like navs and such.
+@import "components/navs";

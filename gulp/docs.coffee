@@ -14,6 +14,8 @@ module.exports = (gulp) ->
   )
 
   gulp.task('docs-build', ->
+    config.baseUrl = '/bc14/'
+    env.setConfig()
     env.build((error) ->
       if error
         gutil.log(error)
