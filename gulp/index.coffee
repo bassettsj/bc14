@@ -14,16 +14,14 @@ gulp.task('clean', (cb) ->
     './docs/_gh_pages'
   ], cb)
 )
-gulp.task('compile', (cb)->
-  gulp.run(['scripts','css'])
-  cb()
-)
+gulp.task('compile', ['scripts','css'])
+
 gulp.task('default', [
   'clean'
   'compile'
 ])
 
-gulp.task('copy', (cb)->
+gulp.task('copy', ['default'], ()->
   gulp.src("#{paths.build}/**/*")
   .pipe(gulp.dest(paths.docs.assets))
 )

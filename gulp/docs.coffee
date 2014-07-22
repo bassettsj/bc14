@@ -1,10 +1,13 @@
 wintersmith = require('wintersmith')
 config = require('../docs/config')
 gutil = require('gulp-util')
-_ = require('underscore')
+
+
+
 module.exports = (gulp) ->
-  env = wintersmith(config)
+
   gulp.task('docs-preview', ->
+    env = wintersmith(config)
     env.preview((error, server)->
       if error
         gutil.log(error)
@@ -12,11 +15,10 @@ module.exports = (gulp) ->
         gutil.log('Preview started')
     )
   )
-  gulp.task('docs-build', (cb)->
-    prod = _.clone(config)
-    prod.baseUrl = '/bc14/'
-    env.reset()
-    env.setConfig(prod)
+  gulp.task('docs-build', ['clean', 'compile', 'copy'], (cb)->
+    config.baseurl = '/bc14/'
+    config.locals.url = 'http://bassettsj.me/bc14'
+    env = wintersmith(config)
     env.build((error, reset) ->
       if error
         gutil.log(error)
