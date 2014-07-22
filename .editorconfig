@@ -1,0 +1,23 @@
+# Drupal editor configuration normalization
+# @see http://editorconfig.org/
+# @see @todo Is there a handbook page for this?
+
+# This is the top-most .editorconfig file; do not search in parent directories.
+root = true
+
+# All files.
+[*]
+end_of_line = LF
+indent_style = space
+indent_size = 2
+
+# Not in the spec yet:
+# @see https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties
+byte_order_mark = false
+charset = utf-8
+trim_trailing_whitespace = true
+indent_blank_lines = false
+insert_final_newline = true
+curly_bracket_next_line = false
+spaces_around_operators = true
+spaces_around_brackets = none
