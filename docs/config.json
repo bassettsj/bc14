@@ -1,0 +1,25 @@
+{
+
+  "locals": {
+    "url": "http://localhost:8080",
+    "name": "BAD Camp Patterns",
+    "owner": "Steven",
+    "description": "Ramblings of an immor(t)al demigod"
+  },
+  "plugins": [
+    "wintersmith-swig"
+  ],
+  "require": {
+    "moment": "moment",
+    "_": "underscore",
+    "typogr": "typogr",
+    "wintersmith-swig": "wintersmith-swig"
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "output": "./docs/_gh_pages",
+  "contents": "./docs/contents",
+  "templates": "./docs/templates"
+}
