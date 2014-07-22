@@ -16,10 +16,10 @@ module.exports = (gulp) ->
       extensions: ['.coffee'],
     }))
     .pipe(sourcemaps.init())
-    .pipe(rename("#{pkg.name}.pkg.js"))
+    .pipe(rename("#{pkg.name}.js"))
     .pipe(gulp.dest(paths.scripts.dest))
     .pipe(uglify())
-    .pipe(rename({suffix:'.pkg.min.js'}))
+    .pipe(rename({suffix:'.min.'}))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(paths.scripts.dest))
 
