@@ -2,14 +2,16 @@ module.exports =
   build: 'dist'
   css:
     src: 'scss/**/*.scss'
-    dest: 'dist/css'
+    # dest: 'dist/css'
+    dest: 'docs/contents/dist/css'
     includes: [
-      'node_modules'
+      '../node_modules'
+      '../bower_components'
     ]
     csslintrc: 'scss/.csslintrc.json'
   scripts:
     src: 'scripts/index.coffee'
-    dest: 'dist/js'
+    dest: 'docs/contents/dist/js'
     watch: 'scripts/**/*.{coffee,js}'
   docs:
     src: 'docs/_gh_pages/**/*'

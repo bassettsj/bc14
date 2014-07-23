@@ -8,7 +8,6 @@ rename = require('gulp-rename')
 pkg = require('../package')
 del = require('del')
 module.exports = (gulp) ->
-
   gulp.task('css', ->
     del(paths.css.dest, ->
       s = gulp.src(paths.css.src)

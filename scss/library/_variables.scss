@@ -1,0 +1,35 @@
+// Typography
+$font-size-base-body: 14px; // More just as a reference.
+
+$font-family-san-serif:  "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$font-family-serif: Georgia, "Times New Roman", Times, serif;
+$font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
+$font-family-base: $font-family-san-serif;
+
+// Typescale
+$font-size-base: scut-em(14);
+$font-size-large: scut-em(18);
+$font-size-small: scut-em(12);
+
+$font-size-h1: scut-em(36);
+$font-size-h2: scut-em(30);
+$font-size-h3: scut-em(24);
+$font-size-h4: scut-em(18);
+$font-size-h5: $font-size-base;
+$font-size-h6: $font-size-small;
+
+// Computed line height
+$line-height-base: 1.428;
+$computed-line-height: floor(($font-size-base * $line-height-base));
+
+
+// Headings
+$headings-font-family: $font-family-base;
+$headings-font-weight: 300;
+$headings-line: 1.1;
+$headings-color: inherit;
+
+
+
+//Grids
+// $susy: ( columns: 12, gutters: 1/4 );
