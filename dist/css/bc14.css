@@ -10,6 +10,30 @@
             box-sizing: border-box;
 }
 
+body:before
+{
+    position: fixed;
+    z-index: -1; 
+    right: 0;
+    left: 0;
+
+    display: inline-block;
+
+    width: 100%;
+    max-width: 68em;
+    height: 100%;
+    margin: 0 auto;
+
+    content: '';
+    pointer-events: none;
+
+    opacity: .4;
+    background-image: deprecated-webkit-gradient(linear, left top, left bottom, rgba(0, 0, 0, 0) 0, #e6f6ff 0, #e6f6ff 6.17215%, rgba(0, 0, 0, 0) 6.17215%, rgba(0, 0, 0, 0) 8.5298%, #e6f6ff 8.5298%, #e6f6ff 14.70196%, rgba(0, 0, 0, 0) 14.70196%, rgba(0, 0, 0, 0) 17.05961%, #e6f6ff 17.05961%, #e6f6ff 23.23176%, rgba(0, 0, 0, 0) 23.23176%, rgba(0, 0, 0, 0) 25.58941%, #e6f6ff 25.58941%, #e6f6ff 31.76157%, rgba(0, 0, 0, 0) 31.76157%, rgba(0, 0, 0, 0) 34.11922%, #e6f6ff 34.11922%, #e6f6ff 40.29137%, rgba(0, 0, 0, 0) 40.29137%, rgba(0, 0, 0, 0) 42.64902%, #e6f6ff 42.64902%, #e6f6ff 48.82117%, rgba(0, 0, 0, 0) 48.82117%, rgba(0, 0, 0, 0) 51.17883%, #e6f6ff 51.17883%, #e6f6ff 57.35098%, rgba(0, 0, 0, 0) 57.35098%, rgba(0, 0, 0, 0) 59.70863%, #e6f6ff 59.70863%, #e6f6ff 65.88078%, rgba(0, 0, 0, 0) 65.88078%, rgba(0, 0, 0, 0) 68.23843%, #e6f6ff 68.23843%, #e6f6ff 74.41059%, rgba(0, 0, 0, 0) 74.41059%, rgba(0, 0, 0, 0) 76.76824%, #e6f6ff 76.76824%, #e6f6ff 82.94039%, rgba(0, 0, 0, 0) 82.94039%, rgba(0, 0, 0, 0) 85.29804%, #e6f6ff 85.29804%, #e6f6ff 91.4702%, rgba(0, 0, 0, 0) 91.4702%, rgba(0, 0, 0, 0) 93.82785%, #e6f6ff 93.82785%, #e6f6ff 100%, rgba(0, 0, 0, 0) 100%);
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0, #e6f6ff 0, #e6f6ff 6.17215%, rgba(0, 0, 0, 0) 6.17215%, rgba(0, 0, 0, 0) 8.5298%, #e6f6ff 8.5298%, #e6f6ff 14.70196%, rgba(0, 0, 0, 0) 14.70196%, rgba(0, 0, 0, 0) 17.05961%, #e6f6ff 17.05961%, #e6f6ff 23.23176%, rgba(0, 0, 0, 0) 23.23176%, rgba(0, 0, 0, 0) 25.58941%, #e6f6ff 25.58941%, #e6f6ff 31.76157%, rgba(0, 0, 0, 0) 31.76157%, rgba(0, 0, 0, 0) 34.11922%, #e6f6ff 34.11922%, #e6f6ff 40.29137%, rgba(0, 0, 0, 0) 40.29137%, rgba(0, 0, 0, 0) 42.64902%, #e6f6ff 42.64902%, #e6f6ff 48.82117%, rgba(0, 0, 0, 0) 48.82117%, rgba(0, 0, 0, 0) 51.17883%, #e6f6ff 51.17883%, #e6f6ff 57.35098%, rgba(0, 0, 0, 0) 57.35098%, rgba(0, 0, 0, 0) 59.70863%, #e6f6ff 59.70863%, #e6f6ff 65.88078%, rgba(0, 0, 0, 0) 65.88078%, rgba(0, 0, 0, 0) 68.23843%, #e6f6ff 68.23843%, #e6f6ff 74.41059%, rgba(0, 0, 0, 0) 74.41059%, rgba(0, 0, 0, 0) 76.76824%, #e6f6ff 76.76824%, #e6f6ff 82.94039%, rgba(0, 0, 0, 0) 82.94039%, rgba(0, 0, 0, 0) 85.29804%, #e6f6ff 85.29804%, #e6f6ff 91.4702%, rgba(0, 0, 0, 0) 91.4702%, rgba(0, 0, 0, 0) 93.82785%, #e6f6ff 93.82785%, #e6f6ff 100%, rgba(0, 0, 0, 0) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(0, 0, 0, 0)), color-stop(0, #e6f6ff), color-stop(6.17215%, #e6f6ff), color-stop(6.17215%, rgba(0, 0, 0, 0)), color-stop(8.5298%, rgba(0, 0, 0, 0)), color-stop(8.5298%, #e6f6ff), color-stop(14.70196%, #e6f6ff), color-stop(14.70196%, rgba(0, 0, 0, 0)), color-stop(17.05961%, rgba(0, 0, 0, 0)), color-stop(17.05961%, #e6f6ff), color-stop(23.23176%, #e6f6ff), color-stop(23.23176%, rgba(0, 0, 0, 0)), color-stop(25.58941%, rgba(0, 0, 0, 0)), color-stop(25.58941%, #e6f6ff), color-stop(31.76157%, #e6f6ff), color-stop(31.76157%, rgba(0, 0, 0, 0)), color-stop(34.11922%, rgba(0, 0, 0, 0)), color-stop(34.11922%, #e6f6ff), color-stop(40.29137%, #e6f6ff), color-stop(40.29137%, rgba(0, 0, 0, 0)), color-stop(42.64902%, rgba(0, 0, 0, 0)), color-stop(42.64902%, #e6f6ff), color-stop(48.82117%, #e6f6ff), color-stop(48.82117%, rgba(0, 0, 0, 0)), color-stop(51.17883%, rgba(0, 0, 0, 0)), color-stop(51.17883%, #e6f6ff), color-stop(57.35098%, #e6f6ff), color-stop(57.35098%, rgba(0, 0, 0, 0)), color-stop(59.70863%, rgba(0, 0, 0, 0)), color-stop(59.70863%, #e6f6ff), color-stop(65.88078%, #e6f6ff), color-stop(65.88078%, rgba(0, 0, 0, 0)), color-stop(68.23843%, rgba(0, 0, 0, 0)), color-stop(68.23843%, #e6f6ff), color-stop(74.41059%, #e6f6ff), color-stop(74.41059%, rgba(0, 0, 0, 0)), color-stop(76.76824%, rgba(0, 0, 0, 0)), color-stop(76.76824%, #e6f6ff), color-stop(82.94039%, #e6f6ff), color-stop(82.94039%, rgba(0, 0, 0, 0)), color-stop(85.29804%, rgba(0, 0, 0, 0)), color-stop(85.29804%, #e6f6ff), color-stop(91.4702%, #e6f6ff), color-stop(91.4702%, rgba(0, 0, 0, 0)), color-stop(93.82785%, rgba(0, 0, 0, 0)), color-stop(93.82785%, #e6f6ff), color-stop(100%, #e6f6ff), to(rgba(0, 0, 0, 0)));
+    background-image:         linear-gradient(left, rgba(0, 0, 0, 0) 0, #e6f6ff 0, #e6f6ff 6.17215%, rgba(0, 0, 0, 0) 6.17215%, rgba(0, 0, 0, 0) 8.5298%, #e6f6ff 8.5298%, #e6f6ff 14.70196%, rgba(0, 0, 0, 0) 14.70196%, rgba(0, 0, 0, 0) 17.05961%, #e6f6ff 17.05961%, #e6f6ff 23.23176%, rgba(0, 0, 0, 0) 23.23176%, rgba(0, 0, 0, 0) 25.58941%, #e6f6ff 25.58941%, #e6f6ff 31.76157%, rgba(0, 0, 0, 0) 31.76157%, rgba(0, 0, 0, 0) 34.11922%, #e6f6ff 34.11922%, #e6f6ff 40.29137%, rgba(0, 0, 0, 0) 40.29137%, rgba(0, 0, 0, 0) 42.64902%, #e6f6ff 42.64902%, #e6f6ff 48.82117%, rgba(0, 0, 0, 0) 48.82117%, rgba(0, 0, 0, 0) 51.17883%, #e6f6ff 51.17883%, #e6f6ff 57.35098%, rgba(0, 0, 0, 0) 57.35098%, rgba(0, 0, 0, 0) 59.70863%, #e6f6ff 59.70863%, #e6f6ff 65.88078%, rgba(0, 0, 0, 0) 65.88078%, rgba(0, 0, 0, 0) 68.23843%, #e6f6ff 68.23843%, #e6f6ff 74.41059%, rgba(0, 0, 0, 0) 74.41059%, rgba(0, 0, 0, 0) 76.76824%, #e6f6ff 76.76824%, #e6f6ff 82.94039%, rgba(0, 0, 0, 0) 82.94039%, rgba(0, 0, 0, 0) 85.29804%, #e6f6ff 85.29804%, #e6f6ff 91.4702%, rgba(0, 0, 0, 0) 91.4702%, rgba(0, 0, 0, 0) 93.82785%, #e6f6ff 93.82785%, #e6f6ff 100%, rgba(0, 0, 0, 0) 100%);
+}
+
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -487,8 +511,16 @@ h6
 
 .wrapper
 {
-    max-width: 75em;
-    margin: 0 auto;
+    max-width: 68em;
+    margin-right: auto; 
+    margin-left: auto;
+}
+.wrapper:after
+{
+    display: table;
+    clear: both; 
+
+    content: '';
 }
 
 /*
