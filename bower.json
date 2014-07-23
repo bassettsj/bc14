@@ -16,6 +16,8 @@
   ],
   "devDependencies": {
     "scut": "~0.10.4",
-    "modular-scale": "~2.0.5"
+    "modular-scale": "~2.0.5",
+    "bourbon": "~3.2",
+    "neat": "~1.5.1"
   }
 }

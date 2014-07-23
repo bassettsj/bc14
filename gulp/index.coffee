@@ -11,7 +11,6 @@ gulp.task('clean', (cb) ->
   del([
     paths.build
     paths.docs.assets
-    './docs/_gh_pages'
   ], cb)
 )
 gulp.task('compile', ['scripts','css'])
@@ -26,13 +25,14 @@ gulp.task('copy', ['default'], ()->
   .pipe(gulp.dest(paths.docs.assets))
 )
 
-gulp.task('deploy', [
-  'default'
-  'copy'
-  'docs-build'
-  ], ->
+gulp.task('deploy', ['default', 'copy', 'docs-build' ], ->
   gulp.src(paths.docs.src)
-  .pipe(ghPages())
+  .pipe(ghPages({
+    remoteUrl: 'git@github.com:bassettsj/bc14.git'
+    origin: 'origin'
+    branch: 'gh-pages'
+    push: true
+  }))
 )
 
 module.exports = gulp

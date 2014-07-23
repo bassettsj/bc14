@@ -15,17 +15,18 @@ module.exports = (gulp) ->
         gutil.log('Preview started')
     )
   )
-  gulp.task('docs-build', ['clean', 'compile', 'copy'], (cb)->
+  gulp.task('docs-build', ['clean', 'compile', 'copy'], ->
     config.baseurl = '/bc14/'
     config.locals.url = 'http://bassettsj.me/bc14'
+    
     env = wintersmith(config)
+
     env.build((error, reset) ->
       if error
         gutil.log(error)
       else
         gutil.log('Sucessfully built!')
     )
-    cb()
   )
 
   return gulp

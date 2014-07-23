@@ -39,8 +39,8 @@
     "moment": "^2.7.0",
     "typogr": "^0.6.4",
     "gulp-util": "^3.0.0",
-    "gulp-gh-pages": "^0.3.3",
     "gulp-sourcemaps": "^1.1.0",
-    "del": "^0.1.1"
+    "del": "^0.1.1",
+    "bourbon": "0.0.2"
   }
 }
