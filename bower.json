@@ -19,7 +19,8 @@
     "modular-scale": "~2.0.5",
     "bourbon": "~3.2",
     "neat": "~1.5.1",
-    "colors": "~2.0.0"
+    "colors": "~2.0.0",
+    "font-awesome": "~4.1.0"
   },
   "dependencies": {
     "kss-node-template": "htanjo/kss-node-template#~0.1.5"

@@ -16,10 +16,7 @@ module.exports = (gulp) ->
         includePaths: paths.css.inlcudes
         sourceMap: 'map'
         }))
-      .pipe(
-        prefixer(
-          "last 1 version", "> 1%", "ie 8", "ie 7", { cascade: true }
-      ))
+      .pipe(prefixer({ cascade: true }))
       .pipe(csscomb())
       .pipe(csslint(paths.css.csslintrc))
       .pipe(csslint.reporter())
@@ -30,7 +27,7 @@ module.exports = (gulp) ->
       .pipe(gulp.dest(paths.css.dest))
       .pipe(rename('style.css'))
       .pipe(gulp.dest('./styleguide/public'))
-        
+
       gulp.src(paths.css.src).pipe(
         kss({
           overview:'./scss/styleguide.md'
