@@ -1,4 +1,3 @@
-
 <h1 class="kss-title kss-title-main"> BAD Camp 2014 Styleguide </h1>
 
 

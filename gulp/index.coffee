@@ -21,7 +21,7 @@ gulp.task('default', [
 ])
 
 
-gulp.task('deploy', ['default', 'copy' ], ->
+gulp.task('deploy', ['default'], ->
   gulp.src(paths.docs.src)
   .pipe(ghPages({
     remoteUrl: 'git@github.com:bassettsj/bc14.git'

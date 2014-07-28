@@ -14,5 +14,5 @@ module.exports =
     dest: 'docs/contents/dist/js'
     watch: 'scripts/**/*.{coffee,js}'
   docs:
-    src: 'docs/_gh_pages/**/*.*'
+    src: 'styleguide/**/*.*'
     assets: 'docs/contents/dist'
