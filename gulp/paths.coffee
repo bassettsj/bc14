@@ -3,7 +3,7 @@ module.exports =
   css:
     src: 'scss/**/*.scss'
     # dest: 'dist/css'
-    dest: 'docs/contents/dist/css'
+    dest: 'dist/css'
     includes: [
       '../node_modules'
       '../bower_components'
@@ -11,7 +11,7 @@ module.exports =
     csslintrc: 'scss/.csslintrc.json'
   scripts:
     src: 'scripts/index.coffee'
-    dest: 'docs/contents/dist/js'
+    dest: 'dist/js'
     watch: 'scripts/**/*.{coffee,js}'
   docs:
     src: 'styleguide/**/*.*'

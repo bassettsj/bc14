@@ -18,15 +18,19 @@
 
 // Base styles throughout the theme.
 @import "base/normalize";
+
 // Type Styles
 //
 // Styleguide 1
 @import "base/type";
+@import "base/links";
 
 // Color Pallet and Helper Classes
 //
 // Styleguide 2
 @import "base/colors";
+
+
 
 
 // Layout styles.
@@ -35,6 +39,27 @@
 
 // Componets like navs and such.
 @import "components/navs";
+
+
+// BTNS
+//
+// [Button library from @mmrs](http://mrmrs.io/btns/)
+//
+// .btn--l - Large
+// .btn--m - Medium
+// .btn--s - Small
+// .btn--full - Block
+// .btn--black - Black
+// .btn--white - White
+// .btn--gray - Gray
+// .btn--gray-dark - Gray Dark
+// .btn--gray-border - Gray Border
+// .btn--blue - Blue
+//
+// Markup:
+// <a href ="#" class="btn {$modifiers}">Button</a>
+//
+// Styleguide 5
 @import "../node_modules/btns/sass/btns";
 
 

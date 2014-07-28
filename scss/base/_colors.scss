@@ -10,6 +10,7 @@
 //   <div class="paint-chip bg--purple-dark">$purple-dark: rgb(131,29,142); </div>
 //   <div class="paint-chip bg--blue-dark">$blue-dark: rgb(0,0,102); </div>
 //   <div class="paint-chip bg--blue-royal">$blue-royal: rgb(66,59,153); </div>
+//   <div class="paint-chip bg--green">$green: rgb(99,154,42);</div>
 // </div>
 //
 // Styleguide 2.1
@@ -24,6 +25,7 @@
 
 }
 @include color-classes($gray-light, "gray-light");
+@include color-classes($green, "green");
 @include color-classes($red-bright, "red-bright");
 @include color-classes($green-bright, "green-bright");
 @include color-classes($purple-dark, "purple-dark");

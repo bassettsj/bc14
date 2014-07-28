@@ -1,0 +1,18 @@
+// Forms
+//
+// Form base styles
+//
+// Markup:
+// <form class="form">
+//   <div class="form-group">
+//     <lablel for="text-input">Label</label>
+//     <input type="text" class="{$modifiers}" value="Text" id="text-input"/>
+//   </div>
+//   <button type="submit">Submit</button>
+// </form>
+//
+// :hover    - Highlight the text box when hovering
+// :focus    - Similar to `:hover`, however it should demand more attention than when an input is simply hovered.
+// :disabled - When disabled, the input's appearance should reflect as such.
+//
+// Styleguide 8

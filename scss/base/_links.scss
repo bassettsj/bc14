@@ -1,0 +1,22 @@
+// Links
+//
+// Base link styles throughout the site.
+//
+// :hover - hover
+// :focus - focus
+// :disabled - disabled
+// :visited - visited
+// :active - active
+// .disabled - disabled
+// .active - active
+//
+// Markup: <a href="#" class="{$modifiers}">Link</a>
+//
+// Styleguide 1.4
+
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  border-bottom: solid $link-color scut-em(1px);
+}

@@ -1,6 +1,14 @@
-// Typography
-$font-size-base-body: 14px; // More just as a reference.
+// Colors;
+$gray-light: rgb(221,221,221);
+$red-bright: rgb(237,34,57);
+$green-bright: rgb(0,255,0);
+$green: rgb(99,154,42);
+$purple-dark: rgb(131,29,142);
+$blue-dark: rgb(0,0,102);
+$blue-royal: rgb(66,59,153);
 
+
+// Typography
 $font-family-san-serif:  "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 $font-family-serif: Georgia, "Times New Roman", Times, serif;
 $font-family-press-start: "Press Start 2P", cursive;
@@ -24,6 +32,11 @@ $font-size-h6: $font-size-small;
 $line-height-base: 1.428;
 $computed-line-height: floor(($font-size-base * $line-height-base));
 
+// links
+$link-color: $blue-dark;
+
+$body-color: rgb(0, 0, 0);
+
 
 // Headings
 $headings-font-family: $font-family-press-start;
@@ -37,12 +50,3 @@ $visual-grid-color: #E6F6FF;
 $visual-grid-opacity: 0.4;
 
 $visual-grid: true;
-
-
-// Colors;
-$gray-light: rgb(221,221,221);
-$red-bright: rgb(237,34,57);
-$green-bright: rgb(0,255,0);
-$purple-dark: rgb(131,29,142);
-$blue-dark: rgb(0,0,102);
-$blue-royal: rgb(66,59,153);
