@@ -3,13 +3,15 @@ $font-size-base-body: 14px; // More just as a reference.
 
 $font-family-san-serif:  "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 $font-family-serif: Georgia, "Times New Roman", Times, serif;
+$font-family-press-start: "Press Start 2P", cursive;
+
 $font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
-$font-family-base: $font-family-san-serif;
+$font-family-base: $font-family-monospace;
 
 // Typescale
-$font-size-base: scut-em(14);
-$font-size-large: scut-em(18);
-$font-size-small: scut-em(12);
+$font-size-base: scut-em(18);
+$font-size-large: scut-em(20);
+$font-size-small: scut-em(14);
 
 $font-size-h1: scut-em(36);
 $font-size-h2: scut-em(30);
@@ -24,12 +26,23 @@ $computed-line-height: floor(($font-size-base * $line-height-base));
 
 
 // Headings
-$headings-font-family: $font-family-base;
+$headings-font-family: $font-family-press-start;
 $headings-font-weight: 300;
 $headings-line: 1.1;
 $headings-color: inherit;
+
+// Grid
 $visual-grid: true;
 $visual-grid-color: #E6F6FF;
 $visual-grid-opacity: 0.4;
 
 $visual-grid: true;
+
+
+// Colors;
+$gray-light: rgb(221,221,221);
+$red-bright: rgb(237,34,57);
+$green-bright: rgb(0,255,0);
+$purple-dark: rgb(131,29,142);
+$blue-dark: rgb(0,0,102);
+$blue-royal: rgb(66,59,153);

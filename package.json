@@ -41,6 +41,7 @@
     "gulp-util": "^3.0.0",
     "gulp-sourcemaps": "^1.1.0",
     "del": "^0.1.1",
-    "bourbon": "0.0.2"
+    "bourbon": "0.0.2",
+    "gulp-kss": "0.0.2"
   }
 }

@@ -1,0 +1,41 @@
+// Navigation
+//
+// Below are the text-oriented form elements used on the site.
+//
+// Styleguide 2.1
+
+
+// Navs base class
+//
+// Your standard ul floated with padding on the links.
+//
+// :hover
+// :focus
+// :disabled
+// .active
+//
+// Markup:
+// <ul class="nav">
+//   <li><a href="#">Link</a></li>
+//   <li><a href="#">Link</a></li>
+//   <li><a href="#">Link</a></li>
+// </ul>
+//
+// Styleguide 2.1.1
+
+
+.nav {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  > li {
+    float: left;
+    display: block;
+    > a {
+      display: inline-block;
+      padding: 0.25em 0.5em;
+      border:
+    }
+  }
+}

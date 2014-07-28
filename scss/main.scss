@@ -2,6 +2,8 @@
 // @link http://davidtheclark.github.io/scut
 @import "../bower_components/scut/dist/scut";
 @import "../bower_components/modular-scale/stylesheets/modular-scale";
+@import "../bower_components/colors/sass/colors";
+
 
 // Global varibales extends, and mixins.
 @import "library/variables";
@@ -16,7 +18,16 @@
 
 // Base styles throughout the theme.
 @import "base/normalize";
+// Type Styles
+//
+// Styleguide 1
 @import "base/type";
+
+// Color Pallet and Helper Classes
+//
+// Styleguide 2
+@import "base/colors";
+
 
 // Layout styles.
 @import "layout/grid";

@@ -1,0 +1,24 @@
+@mixin color-classes($color, $class-prefix, $svg: false) {
+  .#{$class-prefix} {
+    color: $color;
+  }
+
+  .bg--#{$class-prefix} {
+    background-color: $color;
+  }
+
+  .border--#{$class-prefix} {
+    border-color: $color;
+  }
+  @if $svg {
+    // SVG
+    .fill--#{$class-prefix} {
+      fill: $color;
+    }
+    // SVG
+    .stroke--#{$class-prefix} {
+      stroke: $color;
+    }
+  }
+
+}
