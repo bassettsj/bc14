@@ -8,7 +8,7 @@
 //     <lablel for="text-input">Label</label>
 //     <input type="text" class="{$modifiers}" value="Text" id="text-input"/>
 //   </div>
-//   <button type="submit">Submit</button>
+//   <button type="submit" class="btn">Submit</button>
 // </form>
 //
 // :hover    - Highlight the text box when hovering
@@ -17,7 +17,16 @@
 //
 // Styleguide 8
 
+$form-bg: $display-bg;
+form {
+  background: $form-bg;
+}
 
+$forms-color: $display-accent;
 input, input[type="password"], input[type="search"] {
-  
+  appearance: none;
+  border: scut-em(1) $forms-color solid;
+  padding: $padding-base;
+  color: $forms-color;
+  background-color: $form-bg;
 }

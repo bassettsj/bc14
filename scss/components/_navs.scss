@@ -34,14 +34,14 @@
     display: block;
     > a {
       display: inline-block;
-      padding: 0.25em 0.5em;
+      padding:$padding-base;
       border-bottom: none;
     }
   }
   a {
     &:hover,
     &:focus {
-    
+
     }
   }
 }

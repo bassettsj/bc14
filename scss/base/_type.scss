@@ -35,25 +35,16 @@ body {
 // </article>
 //
 // Styleguide 1.1.2
+
+
+
 .display {
   color: $display-color;
   background: $display-bg;
   font-family: $font-family-display;
   letter-spacing: -50;
   a {
-    color: $display-accent;
-    border-bottom: scut-em(1) solid $display-accent;
-    &:hover,
-    &:focus,
-    &.active,
-    &:active {
-      color: darken($display-accent, 10%);
-      border-color: darken($display-accent, 10%);
-    }
-    &:visited {
-      color: $link-color-visited;
-      border-color: $link-color-visited;
-    }
+    @extend %link-green;
   }
 }
 
@@ -90,7 +81,9 @@ body {
 // <!-- with a link -->
 // <h4 class="{$modifiers}">Heading 4 with a <a href="#foobar/asssdfasd">link</a></h6>
 //
+// .page-header - Page headings can use this pattern
 // .display - Accent classes as shown in the render
+// .alt - Altenative styles for Headings as specified by @darius
 //
 // Styleguide 1.2
 
@@ -120,17 +113,21 @@ h1,
 h2,
 .h2 {
   font-size: $font-size-h2;
-  text-transform: uppercase;
-  font-family: $font-family-display;
-  color: rgb(0, 0, 0);
+  &.alt {
+    text-transform: uppercase;
+    font-family: $font-family-display;
+    color: rgb(0, 0, 0);
+  }
 }
 
 h3,
 .h3 {
   font-size: $font-size-h3;
-  font-weight: bold;
-  color: $text-color;
-  font-family: $font-family-base;
+  &.alt {
+    font-weight: bold;
+    color: $text-color;
+    font-family: $font-family-base;
+  }
 }
 
 h4,
@@ -148,15 +145,8 @@ h6,
   font-size: $font-size-h6;
 }
 
-
-// Page-header
-//
-// Markup:
-// <h5 class="page-header">Page Header<small> Add to the top of the page</small></h5>
-//
-// Styleguide 1.2
 .page-header {
-  border-bottom: solid scut-em(1px) $gray-light;
+ border-bottom: solid scut-em(1px) $gray-light;
 }
 
 

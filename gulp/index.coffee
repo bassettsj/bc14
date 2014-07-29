@@ -3,7 +3,6 @@ ghPages = require('gulp-gh-pages')
 paths = require('./paths')
 del = require('del')
 require('./css')(gulp)
-
 require('./scripts')(gulp)
 require('./watch')(gulp)
 
@@ -19,7 +18,6 @@ gulp.task('default', [
   'clean'
   'compile'
 ])
-
 
 gulp.task('deploy', ['default'], ->
   gulp.src(paths.docs.src)
