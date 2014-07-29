@@ -8,6 +8,8 @@ rename = require('gulp-rename')
 kss = require('gulp-kss')
 pkg = require('../package')
 del = require('del')
+
+
 module.exports = (gulp) ->
   gulp.task('css', ->
     del(paths.css.dest, ->
@@ -31,7 +33,7 @@ module.exports = (gulp) ->
       gulp.src(paths.css.src).pipe(
         kss({
           overview:'./scss/styleguide.md'
-          templateDirectory: './bower_components/kss-node-template/template'
+          templateDirectory: './kss-template'
         })
       ).pipe( gulp.dest('./styleguide'))
     )
