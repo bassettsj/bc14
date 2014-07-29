@@ -15,8 +15,11 @@
 //
 // Styleguide 7
 
+$navbar-bg: rgb(0, 0, 0) !default;
+$navbar-color: $green-bright;
 .navbar {
-
+  background-color: $navbar-bg;
+  
 }
 
 .navbar-nav {

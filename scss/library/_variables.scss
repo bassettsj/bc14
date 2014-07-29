@@ -1,3 +1,6 @@
+
+
+
 // Colors;
 $gray-light: rgb(221,221,221);
 $red-bright: rgb(237,34,57);
@@ -7,26 +10,46 @@ $purple-dark: rgb(131,29,142);
 $blue-dark: rgb(0,0,102);
 $blue-royal: rgb(66,59,153);
 
+// Display variables
+$display-color: $gray-light !default;
+$display-bg: rgb(0, 0, 0) !default;
+$display-accent: $green-bright !default;
 
 // Typography
-$font-family-san-serif:  "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+$font-family-san-serif:  "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+
 $font-family-serif: Georgia, "Times New Roman", Times, serif;
 $font-family-press-start: "Press Start 2P", cursive;
 
-$font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
-$font-family-base: $font-family-monospace;
-
+$font-family-monospace: "OCB", Menlo, Monaco, Consolas, "Courier New", monospace;
+$font-family-base: $font-family-san-serif;
+$font-family-display: $font-family-monospace;
 // Typescale
 $font-size-base: scut-em(18);
 $font-size-large: scut-em(20);
 $font-size-small: scut-em(14);
 
-$font-size-h1: scut-em(36);
-$font-size-h2: scut-em(30);
-$font-size-h3: scut-em(24);
-$font-size-h4: scut-em(18);
-$font-size-h5: $font-size-base;
-$font-size-h6: $font-size-small;
+// Modular Scale
+$ms-base: $font-size-base scut-em(60);
+$ms-ratio: $golden;
+
+
+$font-1: ms(5);
+$font-2: ms(4);
+$font-3: ms(3);
+$font-4: ms(2);
+$font-5: ms(1);
+$font-6: ms(0);
+
+$font-size-h1: $font-1 !default;
+$font-size-h2: $font-2 !default;
+$font-size-h3: $font-3 !default;
+$font-size-h4: $font-4 !default;
+$font-size-h5: $font-5 !default;
+$font-size-h6: $font-6 !default;
+
+$font-size-body: scut-em(20);
 
 // Computed line height
 $line-height-base: 1.428;
@@ -34,14 +57,19 @@ $computed-line-height: floor(($font-size-base * $line-height-base));
 
 // links
 $link-color: $blue-dark;
+$link-color-hover: $blue-royal;
+$link-color-active: $link-color-hover;
+$link-color-visited: $purple-dark;
+$link-color-disabled: $link-color;
 
 $body-color: rgb(0, 0, 0);
-
+$text-color: rgb(51,51,51);
 
 // Headings
+$headings: "h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6";
 $headings-font-family: $font-family-press-start;
 $headings-font-weight: 300;
-$headings-line: 1.1;
+$headings-line: 120%;
 $headings-color: inherit;
 
 // Grid

@@ -1,20 +1,79 @@
-body {
-  font-family: $font-family-base;
-  font-size: $font-size-base;
-}
+
 
 
 
 // Body copy
 //
 // markup:
-// <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime doloribus, hic odit architecto voluptatibus illo quod quisquam iste modi temporibus. Numquam possimus nam cumque quod, voluptates ratione optio aliquid quia!</p>
+// <p class="{$modifiers}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime doloribus, hic odit architecto voluptatibus illo quod quisquam iste modi temporibus. Numquam possimus nam cumque quod, voluptates ratione optio aliquid quia!</p>
 //
-//Styleguide 1.1
+// .display - Display variabtion
+//
+//Styleguide 1.1.1
 
 p {
   font-size: $font-size-base;
+  &.display {
+    @extend .display;
+  }
 }
+
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+}
+
+
+// Display Pattern
+//
+// Like a computer display...
+//
+// Markup:
+// <article class="display">
+//   <p>Display text throughout the site will use this pattern.</p>
+// </article>
+//
+// Styleguide 1.1.2
+.display {
+  color: $display-color;
+  background: $display-bg;
+  font-family: $font-family-display;
+  letter-spacing: -50;
+  a {
+    color: $display-accent;
+    border-bottom: scut-em(1) solid $display-accent;
+    &:hover,
+    &:focus,
+    &.active,
+    &:active {
+      color: darken($display-accent, 10%);
+      border-color: darken($display-accent, 10%);
+    }
+    &:visited {
+      color: $link-color-visited;
+      border-color: $link-color-visited;
+    }
+  }
+}
+
+
+// Body
+//
+// Readable text...
+//
+// Markup:
+// <article class="body">
+//   <p>Display text throughout the site will use this pattern.</p>
+// </article>
+//
+// Styleguide 1.1.3
+.body {
+  color: $text-color;
+  font-family: $font-family-base;
+  font-size: $font-size-body;
+}
+
 
 
 // Headings
@@ -22,14 +81,36 @@ p {
 // With included classes.
 //
 // Markup:
-// <h1>Heading 1 <small><code>.h1</code></small></h1>
-// <h2>Heading 2 <small><code>.h2</code></small></h2>
-// <h3>Heading 3 <small><code>.h3</code></small></h3>
-// <h4>Heading 4 <small><code>.h4</code></small></h4>
-// <h5>Heading 5 <small><code>.h5</code></small></h5>
-// <h6>Heading 6 <small><code>.h6</code></small></h6>
+// <h1 class="{$modifiers}">Heading 1 <small><code>.h1</code></small></h1>
+// <h2 class="{$modifiers}">Heading 2 <small><code>.h2</code></small></h2>
+// <h3 class="{$modifiers}">Heading 3 <small><code>.h3</code></small></h3>
+// <h4 class="{$modifiers}">Heading 4 <small><code>.h4</code></small></h4>
+// <h5 class="{$modifiers}">Heading 5 <small><code>.h5</code></small></h5>
+// <h6 class="{$modifiers}">Heading 6 <small><code>.h6</code></small></h6>
+// <!-- with a link -->
+// <h4 class="{$modifiers}">Heading 4 with a <a href="#foobar/asssdfasd">link</a></h6>
+//
+// .display - Accent classes as shown in the render
 //
 // Styleguide 1.2
+
+#{$headings} {
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line;
+  color: $headings-color;
+  > small {
+    color: $gray-light;
+  }
+  &.display {
+    font-family: $headings-font-family;
+    @extend .display;
+  }
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  display: block;
+}
 
 h1,
 .h1 {
@@ -39,11 +120,17 @@ h1,
 h2,
 .h2 {
   font-size: $font-size-h2;
+  text-transform: uppercase;
+  font-family: $font-family-display;
+  color: rgb(0, 0, 0);
 }
 
 h3,
 .h3 {
   font-size: $font-size-h3;
+  font-weight: bold;
+  color: $text-color;
+  font-family: $font-family-base;
 }
 
 h4,
@@ -61,25 +148,11 @@ h6,
   font-size: $font-size-h6;
 }
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: $headings-font-family;
-  font-weight: $headings-font-weight;
-  line-height: $headings-line;
-  color: $headings-color;
-  > small {
-    color: $gray-light;
-  }
-}
-
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  display: block;
-}
 
 // Page-header
 //
 // Markup:
-// <h1 class="page-header">Page Header<small> Add to the top of the page</small></h1>
+// <h5 class="page-header">Page Header<small> Add to the top of the page</small></h5>
 //
 // Styleguide 1.2
 .page-header {

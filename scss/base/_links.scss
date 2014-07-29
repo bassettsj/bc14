@@ -19,4 +19,26 @@ a {
   color: $link-color;
   text-decoration: none;
   border-bottom: solid $link-color scut-em(1px);
+  &:hover,
+  &:focus {
+    color: $link-color-hover;
+    border-bottom-color: $link-color-hover;
+  }
+  &.disabled,
+  &:disabled {
+    color: $link-color-disabled;
+    cursor: not-allowed;
+    &:hover,
+    &:focus
+    &:active {
+      color: $link-color-disabled;
+    }
+  }
+  &:active,
+  &.active {
+    color: $link-color-active;
+  }
+  &:visited {
+    color: $link-color-visited;
+  }
 }

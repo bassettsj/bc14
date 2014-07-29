@@ -22,6 +22,11 @@
   margin-right: scut-em(3);
   margin-bottom: scut-em(3);
   color: rgb(255, 255, 255);
+  &[class*="border"]{
+    border-style: solid;
+    border-width: 2px;
+    color: #333;
+  }
 
 }
 @include color-classes($gray-light, "gray-light");
@@ -31,3 +36,35 @@
 @include color-classes($purple-dark, "purple-dark");
 @include color-classes($blue-dark, "blue-dark");
 @include color-classes($blue-royal, "blue-royal");
+
+
+// Text-color
+//
+// Utility class for text colors in the theme
+//
+// Markup:
+// <span class="gray-light">.gray-light</span>
+// <span class="green">.green</span>
+// <span class="red-bright">.red-bright</span>
+// <span class="green-bright">.green-bright</span>
+// <span class="purple-dark">.purple-dark</span>
+// <span class="blue-dark">.blue-dark<span>
+// <span class="blude-royal">.blue-royal</span>
+//
+// Styleguide 2.2
+
+
+// Border Color
+//
+// Markup:
+// <div class="clearfix">
+//   <div class="paint-chip border--gray-light">$gray-light: rgb(221,221,221);</div>
+//   <div class="paint-chip border--red-bright">$red-bright: rgb(237,34,57);</div>
+//   <div class="paint-chip border--green-bright">$green-bright: rgb(0,255,0); </div>
+//   <div class="paint-chip border--purple-dark">$purple-dark: rgb(131,29,142); </div>
+//   <div class="paint-chip border--blue-dark">$blue-dark: rgb(0,0,102); </div>
+//   <div class="paint-chip border--blue-royal">$blue-royal: rgb(66,59,153); </div>
+//   <div class="paint-chip border--green">$green: rgb(99,154,42);</div>
+// </div>
+//
+// Styleguide 2.3
