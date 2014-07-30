@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>kss-node Styleguide</title>
+    <meta name="description" content="" />
+    <meta name="generator" content="kss-node" />
+    <link rel="stylesheet" href="public/kss.css" />
+    <link rel="stylesheet" href="public/style.css" />
+    <!--[if lt IE 9]>
+    <script src="public/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body id="kss-node">
+    <div class="kss-wrapper row">
+      <div class="kss-sidebar-wrapper columns small-12 medium-3 clearfix">
+        <div class="kss-sidebar">
+          <div class="kss-sidebar-inner">
+            <header class="kss-header">
+              <h1 class="kss-doc-title"><a href="./">BAD Camp 2014 Pattern Library</a></h1>
+            </header>
+            <nav class="kss-nav">
+              <ul class="kss-menu" data-kss-ref="12">
+                <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
+                
+                <li class="kss-menu-item"><a href="section-1.html"><span class="kss-ref">1</span><span class="kss-name">Base</span></a></li>
+                
+                <li class="kss-menu-item"><a href="section-3.html"><span class="kss-ref">3</span><span class="kss-name">Navigation</span></a></li>
+                
+                <li class="kss-menu-item"><a href="section-4.html"><span class="kss-ref">4</span><span class="kss-name">Font-Awesome Icon Fonts</span></a></li>
+                
+                <li class="kss-menu-item"><a href="section-6.html"><span class="kss-ref">6</span><span class="kss-name">Timeline</span></a></li>
+                
+                <li class="kss-menu-item"><a href="section-12.html"><span class="kss-ref">12</span><span class="kss-name">Layout</span></a></li>
+                
+              </ul>
+              
+              <ul class="kss-menu-child">
+                
+                
+                
+                
+                
+                <li class="kss-menu-item"><a href="#section-12.1"><span class="kss-ref">12.1</span><span class="kss-name">Grid</span></a></li>
+                
+                
+                
+                <li class="kss-menu-item"><a href="#section-12.1"><span class="kss-ref">12.1</span><span class="kss-name">Clearfix</span></a></li>
+                
+                
+                
+                <li class="kss-menu-item"><a href="#section-12.2"><span class="kss-ref">12.2</span><span class="kss-name">Float Classes</span></a></li>
+                
+                
+                
+                <li class="kss-menu-item"><a href="#section-12.3"><span class="kss-ref">12.3</span><span class="kss-name">Show grid</span></a></li>
+                
+                
+                
+                <li class="kss-menu-item"><a href="#section-12.4"><span class="kss-ref">12.4</span><span class="kss-name">Show grid columns</span></a></li>
+                
+                
+              </ul>
+              
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="kss-content columns small-12 medium-9">
+        <article class="kss-article">
+          
+          
+          <section id="section-12" class="kss-section kss-depth-1">
+            <h1 class="kss-title"><span class="kss-ref">12</span> Layout</h1>
+            
+            
+            
+          </section>
+          
+          <section id="section-12.1" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">12.1</span> Grid</h1>
+            
+            
+            <div class="kss-description">
+              <p>Create powerful multi-device layouts quickly and easily with the default 12-column, nest-able Foundation grid. If you&apos;re familiar with grid systems, you&apos;ll feel right at home. If not, you&apos;ll learn quickly. <a href="http://foundation.zurb.com/docs/components/grid.html">Foundation/Grid</a></p>
+
+            </div>
+            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="row show-columns">
+  <div class="small-2 large-4 columns">small-2 large-4</div>
+  <div class="small-4 large-4 columns">small-2 large-4</div>
+  <div class="small-6 large-4 columns">small-6 large-4</div>
+</div>
+                </div>
+              </div>
+              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div class=&quot;row show-columns&quot;&gt;
+  &lt;div class=&quot;small-2 large-4 columns&quot;&gt;small-2 large-4&lt;/div&gt;
+  &lt;div class=&quot;small-4 large-4 columns&quot;&gt;small-2 large-4&lt;/div&gt;
+  &lt;div class=&quot;small-6 large-4 columns&quot;&gt;small-6 large-4&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            
+          </section>
+          
+          <section id="section-12.1" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">12.1</span> Clearfix</h1>
+            
+            
+            <div class="kss-description">
+              <p>Clearfix utilty class, also use the <code>scut-clearfix</code> mixin.</p>
+
+            </div>
+            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="clearfix"><div class="right show-gird">Right</div><div class="right show-grid">Right</div></div>
+                </div>
+              </div>
+              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div class=&quot;clearfix&quot;&gt;&lt;div class=&quot;right show-gird&quot;&gt;Right&lt;/div&gt;&lt;div class=&quot;right show-grid&quot;&gt;Right&lt;/div&gt;&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            
+          </section>
+          
+          <section id="section-12.2" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">12.2</span> Float Classes</h1>
+            
+            
+            <div class="kss-description">
+              <p>Utility classes for floating content.</p>
+
+            </div>
+            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="clearfix"><div class="{$modifiers} show-grid">{$modifiers}</div></div>
+                </div>
+              </div>
+              
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.right</div>
+                  <div class="kss-modifier-description">
+                    <p>float right</p>
+
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <div class="clearfix"><div class="right show-grid">right</div></div>
+                </div>
+              </div>
+              
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.left</div>
+                  <div class="kss-modifier-description">
+                    <p>float left</p>
+
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <div class="clearfix"><div class="left show-grid">left</div></div>
+                </div>
+              </div>
+              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div class=&quot;clearfix&quot;&gt;&lt;div class=&quot;{$modifiers} show-grid&quot;&gt;{$modifiers}&lt;/div&gt;&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            
+          </section>
+          
+          <section id="section-12.3" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">12.3</span> Show grid</h1>
+            
+            
+            <div class="kss-description">
+              <p>Mostly about showing the grid in the docs</p>
+
+            </div>
+            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="show-grid"></div>
+                </div>
+              </div>
+              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div class=&quot;show-grid&quot;&gt;&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            
+          </section>
+          
+          <section id="section-12.4" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">12.4</span> Show grid columns</h1>
+            
+            
+            <div class="kss-description">
+              <p>Mostly about showing the grid in the docs</p>
+
+            </div>
+            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="row show-columns">
+<div class="small-2 large-4 columns">small-2 large-4</div>
+</div>
+                </div>
+              </div>
+              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div class=&quot;row show-columns&quot;&gt;
+&lt;div class=&quot;small-2 large-4 columns&quot;&gt;small-2 large-4&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            
+          </section>
+          
+          
+        </article>
+        <footer class="kss-footer">
+          <div>Created using <a href="https://github.com/hughsk/kss-node">kss-node</a> and <a href="https://github.com/htanjo/kss-node-template">kss-node-template</a>.</div>
+        </footer>
+      </div>
+    </div>
+    <script src="public/kss.js"></script>
+    <script src="public/jquery-1.9.1.min.js"></script>
+    <!--[if gt IE 8]><!-->
+    <script src="public/rainbow.min.js"></script>
+    <!--<![endif]-->
+    <script src="public/main.js"></script>
+  </body>
+</html>

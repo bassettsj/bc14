@@ -63,30 +63,17 @@ pre .regexp {
   border-top: 4px solid #997722;
   background: #fff;
 }
-#kss-node .kss-wrapper {
-  width: 940px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
-#kss-node .kss-wrapper:before,
-#kss-node .kss-wrapper:after {
-  content: " ";
-  display: table;
-}
-#kss-node .kss-wrapper:after {
-  clear: both;
-}
-#kss-node .kss-sidebar {
-  float: left;
-  width: 220px;
-  overflow: hidden;
-}
-#kss-node .kss-sidebar.kss-fixed {
-  position: fixed;
-  top: 0;
-}
-#kss-node .kss-sidebar.kss-fixed .kss-sidebar-inner {
-  padding-top: 44px;
+@media (min-width: 720px) {
+  #kss-node .kss-sidebar.kss-fixed {
+    max-width: 225px;
+    padding-right: 1.875rem;
+    padding-left: 0;
+    position: fixed;
+    top: 0;
+  }
+  #kss-node .kss-sidebar.kss-fixed .kss-sidebar-inner {
+    padding-top: 44px;
+  }
 }
 #kss-node .kss-sidebar-inner {
   padding: 40px 0 10px;

@@ -13,49 +13,49 @@
     <![endif]-->
   </head>
   <body id="kss-node">
-    <div class="kss-wrapper">
-      <div class="kss-sidebar">
-        <div class="kss-sidebar-inner">
-          <header class="kss-header">
-            <h1 class="kss-doc-title"><a href="./">kss-node Styleguide</a></h1>
-          </header>
-          <nav class="kss-nav">
-            <ul class="kss-menu" data-kss-ref="3">
-              <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
+    <div class="kss-wrapper row">
+      <div class="kss-sidebar-wrapper columns small-12 medium-3 clearfix">
+        <div class="kss-sidebar">
+          <div class="kss-sidebar-inner">
+            <header class="kss-header">
+              <h1 class="kss-doc-title"><a href="./">BAD Camp 2014 Pattern Library</a></h1>
+            </header>
+            <nav class="kss-nav">
+              <ul class="kss-menu" data-kss-ref="3">
+                <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
+                
+                <li class="kss-menu-item"><a href="section-1.html"><span class="kss-ref">1</span><span class="kss-name">Base</span></a></li>
+                
+                <li class="kss-menu-item"><a href="section-3.html"><span class="kss-ref">3</span><span class="kss-name">Navigation</span></a></li>
+                
+                <li class="kss-menu-item"><a href="section-4.html"><span class="kss-ref">4</span><span class="kss-name">Font-Awesome Icon Fonts</span></a></li>
+                
+                <li class="kss-menu-item"><a href="section-6.html"><span class="kss-ref">6</span><span class="kss-name">Timeline</span></a></li>
+                
+                <li class="kss-menu-item"><a href="section-12.html"><span class="kss-ref">12</span><span class="kss-name">Layout</span></a></li>
+                
+              </ul>
               
-              <li class="kss-menu-item"><a href="section-1.html"><span class="kss-ref">1</span><span class="kss-name">Type Styles</span></a></li>
+              <ul class="kss-menu-child">
+                
+                
+                
+                
+                
+                <li class="kss-menu-item"><a href="#section-3.1"><span class="kss-ref">3.1</span><span class="kss-name">Navbar</span></a></li>
+                
+                
+                
+                <li class="kss-menu-item"><a href="#section-3.1"><span class="kss-ref">3.1</span><span class="kss-name">Navs base class</span></a></li>
+                
+                
+              </ul>
               
-              <li class="kss-menu-item"><a href="section-2.html"><span class="kss-ref">2</span><span class="kss-name">Colors</span></a></li>
-              
-              <li class="kss-menu-item"><a href="section-3.html"><span class="kss-ref">3</span><span class="kss-name">Navigation</span></a></li>
-              
-              <li class="kss-menu-item"><a href="section-4.html"><span class="kss-ref">4</span><span class="kss-name">Font-Awesome Icon Fonts</span></a></li>
-              
-              <li class="kss-menu-item"><a href="section-5.html"><span class="kss-ref">5</span><span class="kss-name">BTNS</span></a></li>
-              
-              <li class="kss-menu-item"><a href="section-6.html"><span class="kss-ref">6</span><span class="kss-name">Grid</span></a></li>
-              
-              <li class="kss-menu-item"><a href="section-7.html"><span class="kss-ref">7</span><span class="kss-name">Navbar</span></a></li>
-              
-              <li class="kss-menu-item"><a href="section-8.html"><span class="kss-ref">8</span><span class="kss-name">Forms</span></a></li>
-              
-            </ul>
-            
-            <ul class="kss-menu-child">
-              
-              
-              
-              
-              
-              <li class="kss-menu-item"><a href="#section-3.1"><span class="kss-ref">3.1</span><span class="kss-name">Navs base class</span></a></li>
-              
-              
-            </ul>
-            
-          </nav>
+            </nav>
+          </div>
         </div>
       </div>
-      <div class="kss-content">
+      <div class="kss-content columns small-12 medium-9">
         <article class="kss-article">
           
           
@@ -68,6 +68,45 @@
 
             </div>
             
+            
+          </section>
+          
+          <section id="section-3.1" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">3.1</span> Navbar</h1>
+            
+            
+            <div class="kss-description">
+              <p>Navigation bar for the top of the site</p>
+
+            </div>
+            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <nav class="navbar">
+  <ul class="nav navbar-nav">
+    <li class="Active"><a href="#">Link</a></li>
+    <li><a href="#">Link</a></li>
+    <li><a href="#">Link</a></li>
+    <li><a href="#">Link</a></li>
+    <li><a href="#">Link</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;nav class=&quot;navbar&quot;&gt;
+  &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+    &lt;li class=&quot;Active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+              </div>
+            </div>
             
           </section>
           
