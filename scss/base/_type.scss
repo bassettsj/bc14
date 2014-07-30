@@ -1,7 +1,3 @@
-
-
-
-
 // Body copy
 //
 // markup:
@@ -9,7 +5,7 @@
 //
 // .display - Display variabtion
 //
-//Styleguide 1.1.1
+//Styleguide 1.1.0
 
 p {
   font-size: $font-size-base;
@@ -34,7 +30,7 @@ body {
 //   <p>Display text throughout the site will use this pattern.</p>
 // </article>
 //
-// Styleguide 1.1.2
+// Styleguide 1.1.1
 
 
 
@@ -46,7 +42,12 @@ body {
   a {
     @extend %link-green;
   }
+  .kss-modifier-example & {
+    padding: scut-rem(20);
+  }
 }
+
+
 
 
 // Body
@@ -58,7 +59,7 @@ body {
 //   <p>Display text throughout the site will use this pattern.</p>
 // </article>
 //
-// Styleguide 1.1.3
+// Styleguide 1.1.2
 .body {
   color: $text-color;
   font-family: $font-family-base;
@@ -85,7 +86,7 @@ body {
 // .display - Accent classes as shown in the render
 // .alt - Altenative styles for Headings as specified by @darius
 //
-// Styleguide 1.2
+// Styleguide 1.1.3
 
 #{$headings} {
   font-family: $headings-font-family;
@@ -150,6 +151,39 @@ h6,
 }
 
 
+// Blockquotes
+//
+// Simple blockquote styles.
+//
+// markup: <blockquote class="{$modifiers}">
+//   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia quam, voluptate facilis ipsum accusantium, totam animi, labore, dolores atque aliquam a. Doloribus in ex facilis numquam officia, rerum nam, doloremque</p>
+// <footer>Some Person in <cite title="Source Title">Some title</cite></footer>
+// </blockquote>
+//
+// .blockquote-reverse - Reverse it, let me work it.
+//
+// Styleguide 1.1.4
+blockquote,
+.blockquote {
+  @extend .body;
+  margin-left: scut-rem(2);
+  padding-left: scut-rem(16);
+  border-left: scut-rem(2) solid $gray-light;
+  footer {
+    font-size: $font-6;
+    color: $gray-light;
+  }
+}
+
+.blockquote-reverse {
+  margin-left: 0;
+  padding-left: 0;
+  border-left: none;
+  text-align: right;
+  margin-right: scut-rem(2);
+  padding-right: scut-rem(16);
+  border-right: scut-rem(2) solid $gray-light;
+}
 
 // Text Utility Classses
 //
@@ -161,7 +195,7 @@ h6,
 // <p class="text-right">Text right</p>
 // <p class="text-justify">Text justify</p>
 //
-// Styleguide 1.3
+// Styleguide 1.1.5
 
 .text-left {
   text-align: left;

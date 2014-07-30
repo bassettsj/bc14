@@ -13,15 +13,16 @@
 //   </ul>
 // </nav>
 //
-// Styleguide 7
+// Styleguide 3.1
 
 $navbar-bg: rgb(0, 0, 0) !default;
 $navbar-color: $green-bright;
 .navbar {
   background-color: $navbar-bg;
-  
+  a {
+    @extend .green-link;
+  }
 }
 
 .navbar-nav {
-
 }

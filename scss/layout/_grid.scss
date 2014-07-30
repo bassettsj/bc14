@@ -1,0 +1,65 @@
+// Clearfix
+//
+// Clearfix utilty class, also use the `scut-clearfix` mixin.
+//
+// markup:
+// <div class="clearfix"><div class="right show-gird">Right</div><div class="right show-grid">Right</div></div>
+//
+// Styleguide 12.1
+.clearfix {
+  @include scut-clearfix;
+}
+
+
+// Float Classes
+//
+// Utility classes for floating content.
+//
+// markup:
+// <div class="clearfix"><div class="{$modifiers} show-grid">{$modifiers}</div></div>
+//
+// .right - float right
+// .left - float left
+//
+// Styleguide 12.2
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+
+// Show grid
+//
+// Mostly about showing the grid in the docs
+//
+// markup: <div class="show-grid"></div>
+//
+// Styleguide 12.3
+
+%show-grid {
+  background-color: $purple-dark;
+  background-color: $purple-dark-alpha;
+  border: scut-rem(1) solid $purple-dark;
+}
+.show-grid {
+  @extend %show-grid;
+  min-height: scut-rem(75);
+  padding: scut-rem(10);
+}
+
+
+// Show grid columns
+//
+// Mostly about showing the grid in the docs
+//
+// markup: <div class="row show-columns">
+// <div class="small-2 large-4 columns">small-2 large-4</div>
+// </div>
+//
+// Styleguide 12.4
+.show-columns {
+  .columns {
+    @extend %show-grid;
+  }
+}

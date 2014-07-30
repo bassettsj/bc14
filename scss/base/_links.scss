@@ -9,26 +9,10 @@
 // :active - active
 // .disabled - disabled
 // .active - active
-// .link-green - display like a monitor
 //
 // Markup: <a href="#" class="{$modifiers}">Link</a>
 //
-// Styleguide 1.4
-
-
-%link-green {
-  color: $display-accent;
-  border-bottom: scut-em(1) solid $display-accent;
-  $link-green-alt: darken($display-accent, 10%);
-  &:hover,
-  &:focus,
-  &.active,
-  &:active,
-  &:visited {
-    color: $link-green-alt;
-    border-color: $link-green-alt;
-  }
-}
+// Styleguide 1.4.0
 
 a {
   color: $link-color;
@@ -56,15 +40,25 @@ a {
   &:visited {
     color: $link-color-visited;
   }
-  &.link-green {
-    @extend %link-green;
+
+}
+
+// Link Green
+//
+// Link
+%link-green {
+  color: $display-accent;
+  border-bottom: scut-em(1) solid $display-accent;
+  $link-green-alt: darken($display-accent, 10%);
+  &:hover,
+  &:focus,
+  &.active,
+  &:active,
+  &:visited {
+    color: $link-green-alt;
+    border-color: $link-green-alt;
   }
-  // Fixes buttons...
-  &.btn {
-    border-bottom-color: inherit;
-  }
-  &.btn--gray,
-  &.btn--blue{
-    border-color: transparent;
-  }
+}
+.link-green {
+  @extend %link-green;
 }
