@@ -2,8 +2,14 @@
 
 
 // Colors;
-$gray-light: rgb(221,221,221);
+$gray-base: rgb(221,221,221);
+$white: rgb(255, 255, 255);
+$gray-lighter: lighten($gray-base, 10%);
+$gray-light: $gray-base;
 $gray: darken($gray-light, 10%);
+$gray-dark: darken($gray, 10%);
+$gray-darker: darken($gray-dark, 10%);
+$black: rgb(0, 0, 0);
 $red-bright: rgb(237,34,57);
 $green-bright: rgb(0,255,0);
 $green: rgb(99,154,42);
@@ -21,7 +27,7 @@ $display-accent: $green-bright !default;
 $font-family-san-serif:  "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 $font-family-serif: Georgia, "Times New Roman", Times, serif;
 $font-family-press-start: "Press Start 2P", cursive;
-$font-family-monospace: "OCR A Std", "OCR B Std", Menlo, Monaco, Consolas, "Courier New", monospace;
+$font-family-monospace: "OCR B Std", "OCR A Std", Menlo, Monaco, Consolas, "Courier New", monospace;
 $font-family-base: $font-family-san-serif;
 $font-family-display: $font-family-monospace;
 
@@ -76,8 +82,8 @@ $headings-color: inherit;
 
 
 // Component Sizing
-$padding-base-vertical:  scut-em(7);
-$padding-base-horizontal: scut-em(12);
+$padding-base-vertical:  scut-rem(10);
+$padding-base-horizontal: scut-rem(15);
 $padding-base: $padding-base-vertical $padding-base-horizontal;
 
 // Grid

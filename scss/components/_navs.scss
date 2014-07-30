@@ -9,13 +9,11 @@
 //
 // Your standard ul floated with padding on the links.
 //
-// :hover
-// :focus
-// :disabled
-// .active
+// .nav-inverse - Inverse
+//
 //
 // Markup:
-// <ul class="nav">
+// <ul class="nav {$modifiers}">
 //   <li><a href="#">Link</a></li>
 //   <li><a href="#">Link</a></li>
 //   <li><a href="#">Link</a></li>
@@ -26,22 +24,44 @@
 
 .nav {
   display: inline-block;
-  list-style: none;
   padding: 0;
   margin: 0;
+  list-style: none;
+
   > li {
-    float: left;
     display: block;
+    @media (min-width: 500px){
+      float: left;
+      > a { width: auto; }
+    }
     > a {
-      display: inline-block;
-      padding:$padding-base;
+      display: block;
+      padding: $padding-base;
+      width: 100%;
       border-bottom: none;
     }
   }
+  a:hover,
+  a:focus{
+    background-color: $gray-lighter;
+    text-decoration: none;
+  }
+  .active a,
+  :active {
+    background-color: $gray-lighter;
+  }
+}
+.nav-inverse {
+  background-color: $black;
   a {
-    &:hover,
-    &:focus {
-
-    }
+    @extend %link-green;
+  }
+  .active a,
+  a:active,
+  a:hover,
+  a:focus{
+    color: $black;
+    background-color: $display-accent;
+    text-decoration: none;
   }
 }

@@ -16,12 +16,10 @@
 
 a {
   color: $link-color;
-  text-decoration: none;
-  border-bottom: solid $link-color scut-em(1px);
+  text-decoration: underline;
   &:hover,
   &:focus {
     color: $link-color-hover;
-    border-bottom-color: $link-color-hover;
   }
   &.disabled,
   &:disabled {
@@ -48,7 +46,6 @@ a {
 // Link
 %link-green {
   color: $display-accent;
-  border-bottom: scut-em(1) solid $display-accent;
   $link-green-alt: darken($display-accent, 10%);
   &:hover,
   &:focus,
@@ -56,7 +53,6 @@ a {
   &:active,
   &:visited {
     color: $link-green-alt;
-    border-color: $link-green-alt;
   }
 }
 .link-green {
