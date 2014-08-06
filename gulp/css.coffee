@@ -24,11 +24,11 @@ module.exports = (gulp) ->
       .pipe(csslint.reporter())
       .pipe(rename(pkg.name + '.css'))
       .pipe(gulp.dest(paths.css.dest))
-      .pipe(cssmin())
-      .pipe(rename({suffix: '.min'}))
       .pipe(gulp.dest(paths.css.dest))
       .pipe(rename('style.css'))
-      .pipe(gulp.dest('./styleguide/public'))
+      .pipe(cssmin())
+      .pipe(rename(pkg.name + '.min.css'))
+      .pipe(gulp.dest(paths.css.dest))
 
       gulp.src(paths.css.src).pipe(
         kss({

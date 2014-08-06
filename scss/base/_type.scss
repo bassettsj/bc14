@@ -1,3 +1,10 @@
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+}
+
 // Body copy
 //
 // markup:
@@ -12,12 +19,6 @@ p {
   &.display {
     @extend .display;
   }
-}
-
-
-body {
-  font-family: $font-family-base;
-  font-size: $font-size-base;
 }
 
 

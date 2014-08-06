@@ -23,18 +23,19 @@
 
 
 .nav {
-  display: inline-block;
   padding: 0;
   margin: 0;
   list-style: none;
-
+  font-family: $font-family-display;
   > li {
     display: block;
+    position: relative;
     @media (min-width: 500px){
       float: left;
       > a { width: auto; }
     }
     > a {
+      position: relative;
       display: block;
       padding: $padding-base;
       width: 100%;
